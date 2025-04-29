@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build: .
+    ports:
+      - "8081:8080" # Проброс портов: хост -> контейнер
+    container_name: auth-container # Имя контейнера
